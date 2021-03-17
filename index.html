@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Bundle - Bootstrap JavaScript plugin; Bootstrap Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/1155a3fc38.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/43943383f4.js"></script>
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- My CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- My Icon Link -->
+    <link rel="icon" href="img/logo.png" sizes="16x16">
+
+    <title>Book Store</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- navbar  -->
+
+        <nav class="navbar navbar-expand-lg px-4 sticky">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav mx-auto text-capitalize">
+                    <li class="nav-item active"><a class="nav-link" href="#">home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#about">about</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#store">store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+                </ul>
+                <!-- Hide this on sml -->
+                <div class="nav-info-items d-none d-lg-flex ">
+                    <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+                        <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+                        <p class="mb-0">+ 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Always show this div, but only show the <p> tag on screens ≥ ipad -->
+            <div class="navbar-nav text-capitalize">
+                <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between">
+                    <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+                    <p class="mb-0 text-capitalize"><span id="item-count">0 </span> items £<span class="item-total">0.00</span>
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <!-- end of nav -->
+        <!-- banner  -->
+        <div class="container-fluid">
+            <div class="row max-height justify-content-center align-items-center">
+                <div class="col-10 mx-auto banner text-center">
+                    <h1 class="text-capitalize">welcome to <strong class="banner-title"> Book Store</strong></h1>
+                    <a href="#store" class="btn banner-link my-2">explore</a>
+                </div>
+                <div id="cart" class="cart">
+
+                    <!-- cart total -->
+                    <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+                        <h5>total</h5>
+                        <h5> £ <strong id="cart-total" class="font-weight-bold">0.00</strong> </h5>
+                    </div>
+                    <!-- end cart total -->
+                    <!-- cart buttons -->
+                    <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+                        <a id="clear-cart" class="btn btn-outline-secondary btn-blue text-uppercase">clear cart</a>
+                        <a href="checkout.html" class="btn btn-outline-secondary text-uppercase btn-checkout">checkout</a>
+                    </div>
+                    <!--end of cart buttons -->
+                </div>
+            </div>
+        </div>
+        <!--end of banner  -->
+    </header>
+    <!-- about us -->
+    <section class="about py-5" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto col-md-6 my-5">
+                    <h1 class="text-capitalize">about <strong class="title"> us</strong></h1>
+                    <p class="my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident nihil nobis, officia! Et exercitationem quisquam ab expedita, facilis obcaecati necessitatibus harum facere iure rem! Minima numquam voluptate quaerat optio obcaecati non a, nemo quo tempore. Nihil omnis, ad quasi voluptate et autem harum repellat pariatur, molestiae fuga consequuntur. Autem recusandae reprehenderit, laboriosam necessitatibus unde natus, quae neque ea numquam fugit?</p>
+                    <a href="#store" class="btn btn-outline-secondary btn-blue text-uppercase">explore</a>
+                </div>
+                <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+                    <div class="about-img__container">
+                        <img src="img/bg2.jpeg" class="img-fluid" alt="bg2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+    <!-- store -->
+    <section id="store" class="store py-5">
+        <div class="container">
+            <!-- section title -->
+            <div class="row">
+                <div class="col-10 mx-auto col-sm-6 text-center">
+                    <h1 class="text-capitalize">our <strong class="title"> store</strong></h1>
+                </div>
+            </div>
+            <!-- end of section title -->
+            <!-- filter buttons -->
+            <div class="row">
+                <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+                    <a class="btn btn-outline-secondary btn-blue text-uppercase filter-btn m-2" data-filter="all"> all</a>
+                    <a class="btn btn-outline-secondary btn-blue text-uppercase filter-btn m-2" data-filter="action">action</a>
+                    <a class="btn btn-outline-secondary btn-blue text-uppercase filter-btn m-2" data-filter="classic">classic</a>
+                    <a class="btn btn-outline-secondary btn-blue text-uppercase filter-btn m-2" data-filter="comedy">comedy</a>
+                    <a class="btn btn-outline-secondary btn-blue text-uppercase filter-btn m-2" data-filter="crime">crime</a>
+                </div>
+            </div>
+            <!-- end of filter buttons -->
+            <!-- store items -->
+            <div class="row" class="store-items" id="store-items">
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item action" data-item="action">
+                    <div id="001" class="card">
+                        <div class="img-container">
+                            <img src="img/book1.jpg" class="card-img-top store-img" alt="" />
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">action</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item classic" data-item="classic">
+                    <div id="002" class="card ">
+                        <div class="img-container">
+                            <img src="img/book2.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">classic</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item comedy" data-item="comedy">
+                    <div id="003" class="card ">
+                        <div class="img-container">
+                            <img src="img/book3.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">comedy</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item comedy" data-item="comedy">
+                    <div id="004" class="card ">
+                        <div class="img-container">
+                            <img src="img/book4.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">comedy</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item crime" data-item="crime">
+                    <div id="005" class="card ">
+                        <div class="img-container">
+                            <img src="img/book5.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">crime</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item classic" data-item="classic">
+                    <div id="006" class="card ">
+                        <div class="img-container">
+                            <img src="img/book6.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">classic</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item action" data-item="action">
+                    <div id="007" class="card ">
+                        <div class="img-container">
+                            <img src="img/book7.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">action</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item action" data-item="action">
+                    <div id="008" class="card ">
+                        <div class="img-container">
+                            <img src="img/book8.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">action</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item comedy" data-item="comedy">
+                    <div id="009" class="card ">
+                        <div class="img-container">
+                            <img src="img/book9.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">comedy</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item crime" data-item="crime">
+                    <div id="010" class="card ">
+                        <div class="img-container">
+                            <img src="img/book10.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">crime</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item classic" data-item="classic">
+                    <div id="011" class="card ">
+                        <div class="img-container">
+                            <img src="img/book11.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">classic</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item crime" data-item="crime">
+                    <div id="012" class="card ">
+                        <div class="img-container">
+                            <img src="img/book12.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="store-item-name">crime</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item -->
+            </div>
+            <!--end of store items -->
+        </div>
+    </section>
+
+    <!-- SERVICE SECTION  -->
+
+    <section id="services" class="service py-5">
+        <div class="container container-service text-center p-4 pt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-truck service-icons" aria-hidden="true"></i>
+                    <h1 class="title-of-service pt-3">Free shipping</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptate, ducimus architecto. Enim laboriosam sit ipsam in dicta, necessitatibus eos modi, totam omnis eveniet odit.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <i class="fa fa-handshake-o service-icons" aria-hidden="true"></i>
+                    <h1 class="title-of-service pt-3">Easy Payments</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptate, ducimus architecto. Enim laboriosam sit ipsam in dicta, necessitatibus eos modi, totam omnis eveniet odit.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <i class="fa fa-gift service-icons" aria-hidden="true"></i>
+                    <h1 class="title-of-service pt-3">Fast Returns</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptate, ducimus architecto. Enim laboriosam sit ipsam in dicta, necessitatibus eos modi, totam omnis eveniet odit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END OF SERVICE SECTION  -->
+
+
+    <!-- subscribsion form section -->
+
+    <section class="subscribe py-5" id="email-form">
+        <div class="container-fluid">
+            <div class="row align-items-center mx-auto">
+                <div class="col-sm-10 mx-auto py-3 text-center">
+
+                    <div class="col-10 mx-auto mt-2 mb-5 col-sm-6 text-center">
+                        <h1 class="text-capitalize">Subscribe <strong class="title"> Here</strong></h1>
+                    </div>
+
+                    <form class="form-inline d-flex justify-content-center">
+
+                        <input type="text" class="form-control mb-2 w-75 email-form-input" id="inlineFormInput" placeholder="Your email...">
+
+                        <button type="submit" class="btn btn-outline-light mb-2 ml-2 email-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  FOOTER SECTION  -->
+
+    <footer id="contact">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-6 bg-dark mx-auto pb-5">
+                    <h1 class="text-capitalize p-5"><strong class="banner-title">Book Store</strong></h1>
+                    <div class="d-flex justify-content-around text-light">
+                        <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="col-md-6 bg-light mx-auto pb-5">
+                    <h1 class="pt-5 pb-3">Contact</h1>
+                    <p><i class="fa fa-globe mx-3" aria-hidden="true"></i>123 Main Street, Glasgow</p>
+                    <p><i class="fa fa-phone mx-3" aria-hidden="true"></i>123 456 789</p>
+                    <p><i class="fa fa-envelope-open-o mx-3" aria-hidden="true"></i>email@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- END OF FOOTER SECTION  -->
+
+
+    <!-- confirmation pop-up -->
+    <div id="confirmation" class="">
+        <p>Your item has been added to the cart.</p>
+    </div>
+    <!-- end of confirmation pop-up -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <!-- My JavaScript Link -->
+    <script src="javascript.js" type="text/javascript"></script>
+</body>
+
+</html>
